@@ -1,0 +1,36 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/* General Styles */
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #000000;
+    box-shadow: 1px 1px 10px #000000;
+}
+
+.navbar > * {
+    color: #FFFFFF !important;
+    padding: 0 2em;
+}
+
+/* Main Styles */
+main {
+    margin: 2em auto;
+    max-width: 1600px;
+    padding: 2em;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1080px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+}
