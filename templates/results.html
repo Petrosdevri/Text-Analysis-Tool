@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analysis Results</title>
+</head>
+<body>
+    <h1>Text Analysis Results</h1>
+    <p>Input Text:</p>
+    <p>{{ text }}</p>
+
+    <h2>Sentiment Analysis:</h2>
+    <p>Positive: {{ sentiment_scores.pos }}</p>
+    <p>Neutral: {{ sentiment_scores.neu }}</p>
+    <p>Negative: {{ sentiment_scores.neg }}</p>
+
+    <h2>Word Frequency Distribution:</h2>
+    <ul>
+        {% for word, frequency in words %}
+            <li>{{ word }}: {{ frequency }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Word Cloud:</h2>
+    <img src="{{ wordcloud_image }}" alt="Word Cloud">
+</body>
+</html>
